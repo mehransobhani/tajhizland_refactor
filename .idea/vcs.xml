@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../GIT/Shop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../patterns/decorector/laravel-decorator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../patterns/decorector/laravel-design-patterns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../patterns/s/design-patterns-with-laravel" vcs="Git" />
