@@ -13,6 +13,8 @@ import {findActive} from "@/services/api/shop/address";
 import {getProvince} from "@/services/api/shop/province";
 import {getCity} from "@/services/api/shop/city";
 import Label from "@/shared/Label/Label";
+import {MdOutlineAlternateEmail} from "react-icons/md";
+import {FaPhone} from "react-icons/fa";
 
 const AccountPage = () => {
 
@@ -119,7 +121,8 @@ const AccountPage = () => {
                                 <div className="mt-1.5 flex">
                 <span
                     className="inline-flex items-center px-2.5 rounded-r-2xl border border-r-0 border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 text-sm">
-                  <i className="text-2xl las la-envelope"></i>
+                  <MdOutlineAlternateEmail/>
+
                 </span>
                                     <Input
                                         className="!rounded-r-none"
@@ -131,7 +134,7 @@ const AccountPage = () => {
                             </div>
                             <div>
                                 <Label>جنسیت</Label>
-                                <Select className="mt-1.5" name={"gender"}>
+                                <Select className="mt-1.5" name={"gender"} defaultValue={user?.gender}>
                                     <option value="1" selected={user?.gender == 1}>مرد</option>
                                     <option value="0" selected={user?.gender == 0}>زن</option>
                                 </Select>
@@ -143,7 +146,8 @@ const AccountPage = () => {
                                 <div className="mt-1.5 flex">
                 <span
                     className="inline-flex items-center px-2.5 rounded-r-2xl border border-r-0 border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 text-sm">
-                  <i className="text-2xl las la-phone-volume"></i>
+                <FaPhone />
+
                 </span>
                                     <Input name={"mobile"} className="!rounded-r-none" defaultValue={user?.username}
                                            readOnly/>
